@@ -10,12 +10,12 @@
 %Autor: Carlos Alonso
 %E-mail: calonsomar@uoc.edu
 %Data: 14/04/2016
-function []=stegoRS(file)
+function [p]=stegoRS(file)
 
 % Carreguem arxiu amb global_gain
 gg = importdata(file);
 gg=gg';
-%gg=gg(1:24576);
+gg=gg(1:4590);
 
 gg=double(gg);
 X = sprintf('Granules: %d',size(gg,2));
