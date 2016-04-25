@@ -13,7 +13,7 @@
 function [p]=stegoRS(file)
 
 % Carreguem arxiu amb global_gain
-gg = importdata(file);
+gg = load(file);
 gg=gg';
 gg=gg(1:4590);
 
