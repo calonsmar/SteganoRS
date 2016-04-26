@@ -1,5 +1,5 @@
 %function [p]=steg(file)
-%   calcula estimaci� Embedding Rate per m�tode RS modificat 
+%   calcula estimació Embedding Rate per mètode RS modificat 
 %         Steganalysis of UnderMP3Cover
 %       JIN, R.; WANG, R.; YAN, D.; YU, X.
 % Journal of Computational Information Systems 8:24 (2012) 10459-10468
@@ -13,6 +13,11 @@
 function [p]=stegoRS(file)
 
 % Carreguem arxiu amb global_gain
+% Ens quedem amb la part inicial, en funció de la dimensió
+% que vulguem
+
+% UnderMP3Cover usa els 6 primers bits per indicar quants dels bits següents
+% indiquen la mida de l'arxiu amagat
 gg = load(file);
 gg=gg';
 gg=gg(1:4590);
@@ -21,7 +26,7 @@ gg=double(gg);
 X = sprintf('Granules: %d',size(gg,2));
 disp(X);
 
-% M�scara
+% Màscara
 mask=[0 1 1 0];
 
 % Punt 5 Calcular r i s amb Flip no negatiu
