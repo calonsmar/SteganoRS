@@ -26,7 +26,7 @@ gg=gg(1:4590);
 %X = sprintf('Granules: %d',size(gg,2));
 %disp(X);
 
-% Màscara
+% Mascara
 mask=[0 1 1 0];
 
 % Punt 5 Calcular r i s amb Flip no negatiu
