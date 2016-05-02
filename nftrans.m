@@ -17,14 +17,11 @@ for p=1:c
         % Si el LSB és 1 sumem 1
         if mod(grup(p),2)==0
             transgrup(p)=grup(p)-1;
-            if transgrup(p)==-1
-                transgrup(p)=255;
-            end  
+            
+              
         else
             transgrup(p)=grup(p)+1;
-            if (transgrup(p)==256)
-                transgrup(p)=0;
-            end
+            
         end
     else
         transgrup(p)=grup(p);
