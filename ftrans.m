@@ -19,12 +19,19 @@ for p=1:c
         % Si el bit LSB és 1 resta 1
         if mod(grup(p),2)==0
             transgrup(p)=grup(p)+1;
+            
         else
             transgrup(p)=grup(p)-1;
         end
     else
         % Aplica F0 (ho deixem igual)
         transgrup(p)=grup(p);
+    end
+    if transgrup(p)==-1
+        transgrup(p)=255;
+    end
+    if tansgrup(p)==256
+        transgrup(p)=0;
     end
 end
 

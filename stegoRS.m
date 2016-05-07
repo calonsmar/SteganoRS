@@ -72,8 +72,12 @@ smin2=s/(r+s+u);
 %Estimar mida missatge
 cr = (rmin-rplus)/(rmin-rplus+rmin2-rplus2);
 cs = (splus-smin)/(splus-smin+splus2-smin2);
+%disp(cr);
+%disp(cs);
 p= (cr+cs)/2;
-if p<0
+%disp(p);
+
+if p<0.05
     p=0;
 end
 if p>1
