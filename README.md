@@ -1,4 +1,7 @@
 # SteganoRS
+
+(c) Carlos Alonso-Martinez
+
 Steganalysis RS for UnderMP3Cover
 Codi en Matlab corresponent a l'article
 Jin, C.; Wang, R.; Yan, D.; Yu, X.(2012) "Steganalysis of UnderMP3Cover" 
